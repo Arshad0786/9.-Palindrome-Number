@@ -28,6 +28,11 @@ class ReverseIntegerTest(unittest.TestCase):
         temp = Solution()
         self.value = 12
         self.assertEqual(temp.isPalindrome(self.value), False)
+
+    def test_obvious_false(self):
+        temp = Solution()
+        self.value = 23673896326
+        self.assertEqual(temp.isPalindrome(self.value), False)
     
     def test_input_one_digit(self):
         temp = Solution()
